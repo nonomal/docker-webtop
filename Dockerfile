@@ -1,4 +1,6 @@
-FROM ghcr.io/linuxserver/baseimage-kasmvnc:alpine320
+# syntax=docker/dockerfile:1
+
+FROM ghcr.io/linuxserver/baseimage-selkies:alpine324
 
 # set version label
 ARG BUILD_DATE
@@ -13,20 +15,23 @@ ENV TITLE="Alpine XFCE"
 RUN \
   echo "**** add icon ****" && \
   curl -o \
-    /kclient/public/icon.png \
+    /usr/share/selkies/www/icon.png \
     https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png && \
   echo "**** install packages ****" && \
   apk add --no-cache \
-    faenza-icon-theme \
-    faenza-icon-theme-xfce4-appfinder \
-    faenza-icon-theme-xfce4-panel \
-    firefox \
+    adw-gtk3 \
+    adwaita-xfce-icon-theme \
+    chromium \
     mousepad \
     ristretto \
     thunar \
     util-linux-misc \
     xfce4 \
     xfce4-terminal && \
+  echo "**** xfce-tweaks ****" && \
+  mv \
+    /usr/bin/thunar \
+    /usr/bin/thunar-real && \
   echo "**** cleanup ****" && \
   rm -f \
     /etc/xdg/autostart/xfce4-power-manager.desktop \
@@ -40,6 +45,6 @@ RUN \
 COPY /root /
 
 # ports and volumes
-EXPOSE 3000
+EXPOSE 3001
 
 VOLUME /config

@@ -3,9 +3,8 @@
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)](https://linuxserver.io)
 
 [![Blog](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Blog)](https://blog.linuxserver.io "all the things you can do with our containers including How-To guides, opinions and much more!")
-[![Discord](https://img.shields.io/discord/354974912613449730.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Discord&logo=discord)](https://discord.gg/YWrKVTn "realtime support / chat with the community and the team.")
+[![Discord](https://img.shields.io/discord/354974912613449730.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Discord&logo=discord)](https://linuxserver.io/discord "realtime support / chat with the community and the team.")
 [![Discourse](https://img.shields.io/discourse/https/discourse.linuxserver.io/topics.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=discourse)](https://discourse.linuxserver.io "post on our community forum.")
-[![Fleet](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Fleet)](https://fleet.linuxserver.io "an online web interface which displays all of our maintained images.")
 [![GitHub](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub&logo=github)](https://github.com/linuxserver "view the source for all of our repositories.")
 [![Open Collective](https://img.shields.io/opencollective/all/linuxserver.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Supporters&logo=open%20collective)](https://opencollective.com/linuxserver "please consider helping us by either donating or contributing to our budget")
 
@@ -20,9 +19,8 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another container r
 Find us at:
 
 * [Blog](https://blog.linuxserver.io) - all the things you can do with our containers including How-To guides, opinions and much more!
-* [Discord](https://discord.gg/YWrKVTn) - realtime support / chat with the community and the team.
+* [Discord](https://linuxserver.io/discord) - realtime support / chat with the community and the team.
 * [Discourse](https://discourse.linuxserver.io) - post on our community forum.
-* [Fleet](https://fleet.linuxserver.io) - an online web interface which displays all of our maintained images.
 * [GitHub](https://github.com/linuxserver) - view the source for all of our repositories.
 * [Open Collective](https://opencollective.com/linuxserver) - please consider helping us by either donating or contributing to our budget
 
@@ -55,7 +53,6 @@ The architectures supported by this image are:
 | :----: | :----: | ---- |
 | x86-64 | ✅ | amd64-\<version tag\> |
 | arm64 | ✅ | arm64v8-\<version tag\> |
-| armhf | ❌ | |
 
 ## Version Tags
 
@@ -63,161 +60,117 @@ This image provides various versions that are available via tags. Please read th
 
 | Tag | Available | Description |
 | :----: | :----: |--- |
-| latest | ✅ | XFCE Alpine |
-| ubuntu-xfce | ✅ | XFCE Ubuntu |
-| fedora-xfce | ✅ | XFCE Fedora |
-| arch-xfce | ✅ | XFCE Arch |
-| debian-xfce | ✅ | XFCE Debian |
-| alpine-kde | ✅ | KDE Alpine |
-| ubuntu-kde | ✅ | KDE Ubuntu |
-| fedora-kde | ✅ | KDE Fedora |
-| arch-kde | ✅ | KDE Arch |
-| debian-kde | ✅ | KDE Debian |
+| latest | ✅ | XFCE Alpine *Wayland Support |
+| alpine-i3 | ✅ | i3 Alpine *Wayland Support |
+| alpine-kde | ✅ | KDE Alpine *Wayland Only |
 | alpine-mate | ✅ | MATE Alpine |
-| ubuntu-mate | ✅ | MATE Ubuntu |
-| fedora-mate | ✅ | MATE Fedora |
+| arch-i3 | ✅ | i3 Arch *Wayland Support |
+| arch-kde | ✅ | KDE Arch *Wayland Support |
 | arch-mate | ✅ | MATE Arch |
+| arch-xfce | ✅ | XFCE Arch *Wayland Support |
+| debian-i3 | ✅ | i3 Debian *Wayland Support |
+| debian-kde | ✅ | KDE Debian |
 | debian-mate | ✅ | MATE Debian |
-| alpine-i3 | ✅ | i3 Alpine |
-| ubuntu-i3 | ✅ | i3 Ubuntu |
-| fedora-i3 | ✅ | i3 Fedora |
-| arch-i3 | ✅ | i3 Arch |
-| debian-i3 | ✅ | i3 Debian |
-| alpine-openbox | ✅ | Openbox Alpine |
-| ubuntu-openbox | ✅ | Openbox Ubuntu |
-| fedora-openbox | ✅ | Openbox Fedora |
-| arch-openbox | ✅ | Openbox Arch |
-| debian-openbox | ✅ | Openbox Debian |
-| alpine-icewm | ✅ | IceWM Alpine |
-| ubuntu-icewm | ✅ | IceWM Ubuntu |
-| fedora-icewm | ✅ | IceWM Fedora |
-| arch-icewm | ✅ | IceWM Arch |
-| debian-icewm | ✅ | IceWM Debian |
+| debian-xfce | ✅ | XFCE Debian |
+| fedora-i3 | ✅ | i3 Fedora *Wayland Support |
+| fedora-kde | ✅ | KDE Fedora *Wayland Support |
+| fedora-mate | ✅ | MATE Fedora |
+| fedora-xfce | ✅ | XFCE Fedora |
+| ubuntu-i3 | ✅ | i3 Ubuntu *Wayland Support |
+| ubuntu-kde | ✅ | KDE Ubuntu *Wayland Only |
+| ubuntu-mate | ✅ | MATE Ubuntu |
+| ubuntu-xfce | ✅ | XFCE Ubuntu *Wayland Support |
+| dev | ✅ | KDE Ubuntu *Current Selkies Development Head |
 
 ## Application Setup
 
-The Webtop can be accessed at:
+The application can be accessed at:
 
-* http://yourhost:3000/
 * https://yourhost:3001/
 
-**Modern GUI desktop apps (including some flavors terminals) have issues with the latest Docker and syscall compatibility, you can use Docker with the `--security-opt seccomp=unconfined` setting to allow these syscalls**
+### Strict reverse proxies
 
-### Application management - PRoot Apps
+This image uses a self-signed certificate by default. This naturally means the scheme is `https`.
+If you are using a reverse proxy which validates certificates, you need to [disable this check for the container](https://docs.linuxserver.io/faq#strict-proxy).
 
-If you run system native installations of software IE `sudo apt-get install filezilla` and then upgrade or destroy/re-create the container that software will be removed and the Webtop will be at a clean state. For some users that will be acceptable and they can update their system packages as well using system native commands like `apt-get upgrade`. If you want Docker to handle upgrading the container and retain your applications and settings we have created [proot-apps](https://github.com/linuxserver/proot-apps) which allow portable applications to be installed to persistent storage in the user's `$HOME` directory and they will work in a confined Docker environment out of the box. These applications and their settings will persist upgrades of the base container and can be mounted into different flavors of Webtop containers on the fly facilitating virtual "Distro Hopping". IE if you are running the `alpine-mate` Webtop you will be able to use the same `/config` directory mounted into the `arch-kde` Webtop and retain the same applications and settings as long as they were installed with `proot-apps install`. This can be achieved from the command line with:
+This container is based on [Docker Baseimage Selkies](https://github.com/linuxserver/docker-baseimage-selkies), which streams a desktop or single application to your web browser. Only the essentials are covered below, the full platform documentation lives at [docs.linuxserver.io/selkies](https://docs.linuxserver.io/selkies/).
 
+### Start Minimal
+
+Most support issues we see stem from large run configurations assembled from years of forum posts. These containers are designed to work with almost nothing. Start with the minimal command below, confirm it works, then add your options (volumes, env vars, GPU flags) one at a time:
+
+```bash
+docker run --rm -it \
+  --shm-size=1gb \
+  -p 3001:3001 \
+  lscr.io/linuxserver/webtop:latest bash
 ```
-proot-apps install filezilla
+
+Open **https://localhost:3001** (note the `https`) and accept the self signed certificate warning. The trailing `bash` gives you a shell inside the container, `ctrl+d` exits and cleans everything up. If a bigger setup misbehaves, return to this command to isolate the problem, see the [Quickstart](https://docs.linuxserver.io/selkies/user-guide/quickstart/) and [Troubleshooting](https://docs.linuxserver.io/selkies/user-guide/troubleshooting/) guides.
+
+### GPU Acceleration
+
+A GPU is optional, the CPU pipeline is fast enough for smooth sessions on modest hardware. When a GPU is mounted into the container it is automatically detected and configured for zero copy rendering and encoding, set `AUTO_GPU=false` to disable this behavior.
+
+**Intel / AMD (open source drivers), one flag is all it takes:**
+
+```bash
+docker run --rm -it \
+  --shm-size=1gb \
+  -p 3001:3001 \
+  --device /dev/dri \
+  lscr.io/linuxserver/webtop:latest bash
 ```
 
-PRoot Apps is included in all KasmVNC based containers, a list of linuxserver.io supported applications is located [HERE](https://github.com/linuxserver/proot-apps?tab=readme-ov-file#supported-apps).
+**Nvidia (proprietary drivers, not available on Alpine based images):**
 
-### Options in all KasmVNC based GUI containers
+Requires host driver **580 or newer** installed from the `.run` file downloaded directly from Nvidia. On drivers older than 595.80 you may also need kernel parameters and a dummy plug, see [GPU Acceleration](https://docs.linuxserver.io/selkies/user-guide/gpu/) before opening an issue.
 
-This container is based on [Docker Baseimage KasmVNC](https://github.com/linuxserver/docker-baseimage-kasmvnc) which means there are additional environment variables and run configurations to enable or disable specific functionality.
+```bash
+docker run --rm -it \
+  --shm-size=1gb \
+  -p 3001:3001 \
+  --runtime nvidia \
+  --gpus all \
+  --device /dev/nvidia-modeset \
+  lscr.io/linuxserver/webtop:latest bash
+```
 
-#### Optional environment variables
+Compose examples, multi GPU selection (`DRINODE`/`DRI_NODE`), Unraid notes, and a step by step debugging loop are in the [GPU Acceleration](https://docs.linuxserver.io/selkies/user-guide/gpu/) guide.
 
-| Variable | Description |
-| :----: | --- |
-| CUSTOM_PORT | Internal port the container listens on for http if it needs to be swapped from the default 3000. |
-| CUSTOM_HTTPS_PORT | Internal port the container listens on for https if it needs to be swapped from the default 3001. |
-| CUSTOM_USER | HTTP Basic auth username, abc is default. |
-| PASSWORD | HTTP Basic auth password, abc is default. If unset there will be no auth |
-| SUBFOLDER | Subfolder for the application if running a subfolder reverse proxy, need both slashes IE `/subfolder/` |
-| TITLE | The page title displayed on the web browser, default "KasmVNC Client". |
-| FM_HOME | This is the home directory (landing) for the file manager, default "/config". |
-| START_DOCKER | If set to false a container with privilege will not automatically start the DinD Docker setup. |
-| DRINODE | If mounting in /dev/dri for [DRI3 GPU Acceleration](https://www.kasmweb.com/kasmvnc/docs/master/gpu_acceleration.html) allows you to specify the device to use IE `/dev/dri/renderD128` |
-| DISABLE_IPV6 | If set to true or any value this will disable IPv6 | 
-| LC_ALL | Set the Language for the container to run as IE `fr_FR.UTF-8` `ar_AE.UTF-8` |
-| NO_DECOR | If set the application will run without window borders in openbox for use as a PWA. |
-| NO_FULL | Do not autmatically fullscreen applications when using openbox. |
+### Security
 
-#### Optional run configurations
+>[!WARNING]
+>This container provides privileged access to the host system. Do not expose it to the Internet unless you have secured it properly.
 
-| Variable | Description |
-| :----: | --- |
-| `--privileged` | Will start a Docker in Docker (DinD) setup inside the container to use docker in an isolated environment. For increased performance mount the Docker directory inside the container to the host IE `-v /home/user/docker-data:/var/lib/docker`. |
-| `-v /var/run/docker.sock:/var/run/docker.sock` | Mount in the host level Docker socket to either interact with it via CLI or use Docker enabled applications. |
-| `--device /dev/dri:/dev/dri` | Mount a GPU into the container, this can be used in conjunction with the `DRINODE` environment variable to leverage a host video card for GPU accelerated applications. Only **Open Source** drivers are supported IE (Intel,AMDGPU,Radeon,ATI,Nouveau) |
+**HTTPS is required.** Modern browser features used for video and audio (WebCodecs) only work in a secure context. Port `3001` serves HTTPS directly, the HTTP port exists only to sit behind a reverse proxy.
+
+By default there is **no authentication**. Setting the `CUSTOM_USER` and `PASSWORD` environment variables enables HTTP basic auth, which is suitable only for a trusted local network. For internet exposure, place the container behind a reverse proxy with robust authentication, such as [SWAG](https://github.com/linuxserver/docker-swag). Keep in mind the web interface includes a terminal with passwordless `sudo`, anyone who can reach the GUI can gain root inside the container.
+
+Authentication options, sharing link behavior, container isolation, and the lockdown variables for kiosk style deployments are covered in [Security and Hardening](https://docs.linuxserver.io/selkies/user-guide/security/).
 
 ### Language Support - Internationalization
 
-The environment variable `LC_ALL` can be used to start Webtop in a different language than English simply pass for example to launch the Desktop session in French `LC_ALL=fr_FR.UTF-8`. Some languages like Chinese, Japanese, or Korean will be missing fonts needed to render properly known as cjk fonts, but others may exist and not be installed inside the Webtop depending on what underlying distribution you are running. We only ensure fonts for Latin characters are present. Fonts can be installed with a mod on startup.
+To launch the session in a different language, set the `LC_ALL` environment variable, e.g. `-e LC_ALL=zh_CN.UTF-8` (Chinese), `ja_JP.UTF-8` (Japanese), `ko_KR.UTF-8` (Korean), `ar_AE.UTF-8` (Arabic), `ru_RU.UTF-8` (Russian), `es_MX.UTF-8` (Spanish Latin America), `de_DE.UTF-8` (German), `fr_FR.UTF-8` (French), `nl_NL.UTF-8` (Dutch), `it_IT.UTF-8` (Italian).
 
-To install cjk fonts on startup as an example pass the environment variables (Alpine base):
+### Beyond Running the App
 
-```
--e DOCKER_MODS=linuxserver/mods:universal-package-install 
--e INSTALL_PACKAGES=font-noto-cjk 
--e LC_ALL=zh_CN.UTF-8
-```
+This image inherits every capability of the Selkies platform, all documented in depth on the docs site:
 
-The web interface has the option for "IME Input Mode" in Settings which will allow non english characters to be used from a non en_US keyboard on the client. Once enabled it will perform the same as a local Linux installation set to your locale.
-
-### DRI3 GPU Acceleration
-
-For accelerated apps or games, render devices can be mounted into the container and leveraged by applications using:
-
-`--device /dev/dri:/dev/dri`
-
-This feature only supports **Open Source** GPU drivers:
-
-| Driver | Description |
-| :----: | --- |
-| Intel | i965 and i915 drivers for Intel iGPU chipsets |
-| AMD | AMDGPU, Radeon, and ATI drivers for AMD dedicated or APU chipsets |
-| NVIDIA | nouveau2 drivers only, closed source NVIDIA drivers lack DRI3 support |
-
-The `DRINODE` environment variable can be used to point to a specific GPU.
-Up to date information can be found [here](https://www.kasmweb.com/kasmvnc/docs/master/gpu_acceleration.html)
-
-#### Display Compositing (desktop effects)
-
-When using this image in tandem with a supported video card, compositing will function albeit with a performance hit when syncing the frames with pixmaps for the applications using it. This can greatly increase app compatibility if the application in question requires compositing, but requires a real GPU to be mounted into the container. By default we disable compositing at a DE level for performance reasons on our downstream images, but it can be enabled by the user and programs using compositing will still function even if the DE has it disabled in its settings. When building desktop images be sure you understand that with it enabled by default only users that have a compatible GPU mounted in will be able to use your image.
-
-### Nvidia GPU Support
-
-**Nvidia is not compatible with Alpine based images**
-
-Nvidia support is available by leveraging Zink for OpenGL support. This can be enabled with the following run flags:
-
-| Variable | Description |
-| :----: | --- |
-| --gpus all | This can be filtered down but for most setups this will pass the one Nvidia GPU on the system |
-| --runtime nvidia | Specify the Nvidia runtime which mounts drivers and tools in from the host |
-
-The compose syntax is slightly different for this as you will need to set nvidia as the default runtime:
-
-```
-sudo nvidia-ctk runtime configure --runtime=docker --set-as-default
-sudo service docker restart
-```
-
-And to assign the GPU in compose:
-
-```
-services:
-  webtop:
-    image: linuxserver/webtop:debian-kde
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [compute,video,graphics,utility]
-```
-
-### Lossless mode
-
-This container is capable of delivering a true lossless image at a high framerate to your web browser by changing the Stream Quality preset to "Lossless", more information [here](https://www.kasmweb.com/docs/latest/how_to/lossless.html#technical-background). In order to use this mode from a non localhost endpoint the HTTPS port on 3001 needs to be used. If using a reverse proxy to port 3000 specific headers will need to be set as outlined [here](https://github.com/linuxserver/docker-baseimage-kasmvnc#lossless).
+* [Configuration Reference](https://docs.linuxserver.io/selkies/user-guide/configuration/) - every environment variable: ports, subfolder reverse proxy, custom dashboards, watermarking, and the full set of `SELKIES_*` stream, feature, and UI settings with their `|locked` syntax.
+* [Using the Web Client](https://docs.linuxserver.io/selkies/user-guide/web-client/) - file transfer, clipboard sync, audio and microphone, up to four gamepads, session sharing, and mobile touch support.
+* [Installing Applications](https://docs.linuxserver.io/selkies/user-guide/installing-apps/) - persistent user installed apps with [proot-apps](https://github.com/linuxserver/proot-apps) (`proot-apps install filezilla`) or native packages at boot with Docker mods.
+* [Docker in Docker and host Docker control](https://docs.linuxserver.io/selkies/user-guide/configuration/#optional-run-configurations) - run `--privileged` for an isolated DinD setup, or mount `/var/run/docker.sock` to manage the host.
+* [Reverse Proxy](https://docs.linuxserver.io/selkies/user-guide/reverse-proxy/) - proxying websockets and subfolders correctly.
+* [SealSkin](https://docs.linuxserver.io/selkies/components/sealskin/) - turnkey multi user VDI orchestration with browser extension and mobile apps, this image is fully compatible.
+* [Pelorus](https://docs.linuxserver.io/selkies/components/pelorus/) - expose the session to AI agents via a computer use API and accessibility stack.
 
 ## Usage
 
 To help you get started creating a container from this image you can either use docker-compose or the docker cli.
+
+>[!NOTE]
+>Unless a parameter is flagged as 'optional', it is *mandatory* and a value must be provided.
 
 ### docker-compose (recommended, [click here for more info](https://docs.linuxserver.io/general/docker-compose))
 
@@ -227,23 +180,16 @@ services:
   webtop:
     image: lscr.io/linuxserver/webtop:latest
     container_name: webtop
-    security_opt:
-      - seccomp:unconfined #optional
     environment:
       - PUID=1000
       - PGID=1000
       - TZ=Etc/UTC
-      - SUBFOLDER=/ #optional
-      - TITLE=Webtop #optional
     volumes:
       - /path/to/data:/config
-      - /var/run/docker.sock:/var/run/docker.sock #optional
     ports:
       - 3000:3000
       - 3001:3001
-    devices:
-      - /dev/dri:/dev/dri #optional
-    shm_size: "1gb" #optional
+    shm_size: "1gb"
     restart: unless-stopped
 ```
 
@@ -252,18 +198,13 @@ services:
 ```bash
 docker run -d \
   --name=webtop \
-  --security-opt seccomp=unconfined `#optional` \
   -e PUID=1000 \
   -e PGID=1000 \
   -e TZ=Etc/UTC \
-  -e SUBFOLDER=/ `#optional` \
-  -e TITLE=Webtop `#optional` \
   -p 3000:3000 \
   -p 3001:3001 \
   -v /path/to/data:/config \
-  -v /var/run/docker.sock:/var/run/docker.sock `#optional` \
-  --device /dev/dri:/dev/dri `#optional` \
-  --shm-size="1gb" `#optional` \
+  --shm-size="1gb" \
   --restart unless-stopped \
   lscr.io/linuxserver/webtop:latest
 ```
@@ -274,18 +215,13 @@ Containers are configured using parameters passed at runtime (such as those abov
 
 | Parameter | Function |
 | :----: | --- |
-| `-p 3000` | Web Desktop GUI |
-| `-p 3001` | Web Desktop GUI HTTPS |
+| `-p 3000:3000` | Web Desktop GUI HTTP, must be proxied |
+| `-p 3001:3001` | Web Desktop GUI HTTPS |
 | `-e PUID=1000` | for UserID - see below for explanation |
 | `-e PGID=1000` | for GroupID - see below for explanation |
 | `-e TZ=Etc/UTC` | specify a timezone to use, see this [list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List). |
-| `-e SUBFOLDER=/` | Specify a subfolder to use with reverse proxies, IE `/subfolder/` |
-| `-e TITLE=Webtop` | String which will be used as page/tab title in the web browser. |
 | `-v /config` | abc users home directory |
-| `-v /var/run/docker.sock` | Docker Socket on the system, if you want to use Docker in the container |
-| `--device /dev/dri` | Add this for GL support (Linux hosts only) |
-| `--shm-size=` | We set this to 1 gig to prevent modern web browsers from crashing |
-| `--security-opt seccomp=unconfined` | For Docker Engine only, many modern gui apps need this to function on older hosts as syscalls are unknown to Docker. |
+| `--shm-size=` | Recommended for all desktop images. |
 
 ## Environment variables from files (Docker secrets)
 
@@ -423,7 +359,8 @@ Below are the instructions for updating containers:
 
 ### Image Update Notifications - Diun (Docker Image Update Notifier)
 
-**tip**: We recommend [Diun](https://crazymax.dev/diun/) for update notifications. Other tools that automatically update containers unattended are not recommended or supported.
+>[!TIP]
+>We recommend [Diun](https://crazymax.dev/diun/) for update notifications. Other tools that automatically update containers unattended are not recommended or supported.
 
 ## Building locally
 
@@ -438,16 +375,28 @@ docker build \
   -t lscr.io/linuxserver/webtop:latest .
 ```
 
-The ARM variants can be built on x86_64 hardware using `multiarch/qemu-user-static`
+The ARM variants can be built on x86_64 hardware and vice versa using `lscr.io/linuxserver/qemu-static`
 
 ```bash
-docker run --rm --privileged multiarch/qemu-user-static:register --reset
+docker run --rm --privileged lscr.io/linuxserver/qemu-static --reset
 ```
 
 Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64`.
 
 ## Versions
 
+* **10.06.26:** - Rebase Alpine images to 3.24.
+* **07.05.26:** - Deprecate Enterprise Linux tags.
+* **07.04.26:** - Rebase Ubuntu images to Resolute.
+* **26.03.26:** - Rebase Fedora images to 44.
+* **24.03.26:** - Update tags that support Wayland to pass ozone platform for chromium.
+* **27.12.25:** - Rebase Alpine images to 3.23.
+* **17.11.25:** - Rebase Fedora images to 43.
+* **24.07.25:** - Rebase Debian images to Trixie.
+* **17.06.25:** - Rebase all images to Selkies, drop openbox and icewm, bump Alpine to 3.22, bump Fedora to 42.
+* **10.01.25:** - Rebase Fedora to 41.
+* **06.12.24:** - Rebase Alpine to 3.21.
+* **26.09.24:** - Swap from firefox to chromium on Alpine images.
 * **23.05.24:** - Rebase Alpine to 3.20, document Nvidia support.
 * **22.04.24:** - Rebase Ubuntu to Noble.
 * **16.04.24:** - Add docs on PRoot Apps.
